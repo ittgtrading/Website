@@ -1,0 +1,43 @@
+/* Simple, clean base styles */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif; color: #0f172a; background: #ffffff; }
+a { color: #0ea5e9; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 980px; margin: 0 auto; padding: 16px; }
+
+/* Header and nav */
+header { background: #0b1324; color: #ffffff; }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; }
+.brand { font-weight: 700; font-size: 18px; letter-spacing: 0.3px; }
+nav ul { list-style: none; display: flex; gap: 14px; padding: 0; margin: 0; }
+nav a { color: #e2e8f0; padding: 6px 8px; border-radius: 6px; }
+nav a.active, nav a:hover { background: #1e293b; color: #ffffff; }
+
+/* Hero */
+.hero { padding: 48px 16px; background: #f1f5f9; border-bottom: 1px solid #e2e8f0; }
+.hero h1 { margin: 0 0 8px; font-size: 28px; }
+.hero p { margin: 0; font-size: 16px; color: #334155; }
+
+/* Cards */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 16px; }
+.card { border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; background: #ffffff; }
+.card h3 { margin: 0 0 8px; font-size: 18px; }
+.card p { margin: 0; color: #475569; }
+
+/* Sections */
+section h2 { font-size: 22px; margin: 24px 0 8px; }
+section p { color: #475569; }
+
+/* Footer */
+footer { margin-top: 28px; border-top: 1px solid #e2e8f0; padding: 18px 16px; color: #475569; font-size: 14px; background: #f8fafc; }
+.footer-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
+@media (min-width: 600px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Utilities */
+.btn { display: inline-block; padding: 10px 14px; border-radius: 8px; background: #0ea5e9; color: #ffffff; font-weight: 600; }
+.btn:hover { filter: brightness(0.95); }
+.badge { display: inline-block; padding: 4px 8px; background: #e0f2fe; color: #075985; border-radius: 9999px; font-size: 12px; }
+.list { padding-left: 18px; }
+.list li { margin: 6px 0; }
